@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "B6A64D54",
-    "lastKnownWriteTime" : 1598290019,
-    "last_content_update" : 1598290019700,
+    "lastKnownWriteTime" : 1598291268,
+    "last_content_update" : 1598291268611,
     "path" : "~/R/datasciencecoursera/Getting and cleaning data/run_analysis.R",
     "project_path" : "Getting and cleaning data/run_analysis.R",
     "properties" : {
-        "cursorPosition" : "6,0",
-        "scrollLine" : "0"
+        "cursorPosition" : "67,0",
+        "scrollLine" : "48"
     },
     "relative_order" : 32,
     "source_on_save" : false,

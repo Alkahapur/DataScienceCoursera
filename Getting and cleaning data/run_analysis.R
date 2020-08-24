@@ -5,10 +5,10 @@ setwd("C:/Users/Alka/Documents/R/datasciencecoursera/Getting and cleaning data/"
 
 
 unzip(zipfile="getdata_projectfiles_UCI HAR Dataset.zip")
-list.files("C:/Users/Alka/Documents/R/datasciencecoursera/Peer-graded Assignment Getting and Cleaning Data Course Projec/")
+list.files("C:/Users/Alka/Documents/R/datasciencecoursera/Getting and cleaning data/")
 
 #define the path where the new folder has been unziped
-pathdata = file.path("C:/Users/Alka/Documents/R/datasciencecoursera/Peer-graded Assignment Getting and Cleaning Data Course Projec/", "UCI HAR Dataset")
+pathdata = file.path("C:/Users/Alka/Documents/R/datasciencecoursera/Getting and cleaning data/", "UCI HAR Dataset")
 #create a file which has the 28 file names
 files = list.files(pathdata, recursive=TRUE)
 #show the files
@@ -72,5 +72,7 @@ setWithActivityNames = merge(setForMeanAndStd, activityLabels, by='activityId', 
 secTidySet <- aggregate(. ~subjectId + activityId, setWithActivityNames, mean)
 secTidySet <- secTidySet[order(secTidySet$subjectId, secTidySet$activityId),]
 
+
+secTidySet<-as.data.frame(secTidySet)
 #The last step is to write the ouput to a text file 
 write.table(secTidySet, "secTidySet.txt", row.name=FALSE)

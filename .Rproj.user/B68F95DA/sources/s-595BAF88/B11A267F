@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598168591007.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B11A267F",
+    "lastKnownWriteTime" : 1597680758,
+    "last_content_update" : 1597680758,
+    "path" : "~/R/AlgoLab_ViaLife Project/Association_rules_12082020.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "12,42",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 15,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

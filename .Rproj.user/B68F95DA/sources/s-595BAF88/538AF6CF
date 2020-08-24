@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598277830724.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "538AF6CF",
+    "lastKnownWriteTime" : 1598210874,
+    "last_content_update" : 1598210874,
+    "path" : "~/R/datasciencecoursera/ProgrammingAssignment2/cache_vector.R",
+    "project_path" : "ProgrammingAssignment2/cache_vector.R",
+    "properties" : {
+        "cursorPosition" : "10,0",
+        "scrollLine" : "13",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 29,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

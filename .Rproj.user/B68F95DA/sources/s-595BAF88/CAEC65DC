@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598083091669.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "449732648",
+    "id" : "CAEC65DC",
+    "lastKnownWriteTime" : 1598063414,
+    "last_content_update" : 1598063414,
+    "path" : "~/R/datasciencecoursera/Programming Assignment3/ranking_hospital.R",
+    "project_path" : "Programming Assignment3/ranking_hospital.R",
+    "properties" : {
+    },
+    "relative_order" : 14,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

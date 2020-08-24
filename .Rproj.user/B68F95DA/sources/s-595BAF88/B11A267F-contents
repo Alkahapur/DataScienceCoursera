@@ -1,0 +1,82 @@
+rm(list = ls())
+
+library(tidyverse)
+library(dplyr)
+library(devtools)
+library(arules)
+library(arulesViz)
+
+data=read.csv("Vaya India - Data - May'17 to May'20 V2.csv")
+
+#data_new<-data[!(SKU %in%(SKU_LIST)),]
+
+########## Data preprocessing ############
+
+dat12= data%>% group_by(OrderCode) %>% mutate( count=n_distinct(SKU)) 
+
+dat12= dat12%>% filter(count>1)  
+
+x<- dat12[,c(2,15)]
+colnames(x)<-c("OrderCode","Item")
+
+y<-dat12[,c(2,5,15)]
+colnames(y)<-c("OrderCode","Email","Item")
+
+
+write.csv(x,"format1_data.csv")
+read.csv("format1_data.csv")
+
+write.csv(y,"format2_data.csv")
+read.csv("format2_data.csv")
+
+
+
+############ Association rule on data grouped by order code #######
+
+
+# Read that csv back in
+order_trans <- read.transactions(
+  file = "format1_data.csv",
+  format = "single",
+  sep = ",",
+  header = TRUE,
+  cols=c("OrderCode","Item"),
+  rm.duplicates = T
+)
+summary(order_trans)
+
+rules_x <- apriori(order_trans, parameter = list(supp = 0.001, conf = 0.4, target = "rules"))
+
+#rules_x<-sort(rules_x, decreasing=TRUE,by="confidence")
+
+summary(rules_x)
+options(digits = 2)
+
+x<-inspect(rules_x)
+write.csv(x,"rules_data_1.csv")
+
+plot(rules_x,method="graph",interactive=TRUE,shading=NA)
+
+
+
+############ Association rule on data grouped by email #######
+
+order_trans <- read.transactions(
+  file = "format2_data.csv",
+  format = "single",
+  sep = ",",
+  header = TRUE,
+  cols=c("Email","Item"),
+  rm.duplicates = T
+)
+summary(order_trans)
+
+rules_y <- apriori(order_trans, parameter = list(supp = 0.001, conf = 0.6, target = "rules"))
+summary(rules_y)
+
+options(digits = 2)
+y<-inspect(rules_y)
+write.csv(y,"rules_data_2.csv")
+
+plot(rules_y,method="graph",interactive=FALSE,shading=NA)
+

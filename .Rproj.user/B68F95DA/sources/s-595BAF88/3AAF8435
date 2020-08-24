@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598277822817.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3AAF8435",
+    "lastKnownWriteTime" : 1598277891,
+    "last_content_update" : 1598277891388,
+    "path" : "~/R/datasciencecoursera/ProgrammingAssignment2/cache_matrix.R",
+    "project_path" : "ProgrammingAssignment2/cache_matrix.R",
+    "properties" : {
+        "cursorPosition" : "25,21",
+        "scrollLine" : "1",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 28,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

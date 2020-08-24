@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1597993576382.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "68C09811",
+    "lastKnownWriteTime" : 1598019542,
+    "last_content_update" : 1598019542031,
+    "path" : "~/R/datasciencecoursera/specdata/cor.R",
+    "project_path" : "specdata/cor.R",
+    "properties" : {
+        "cursorPosition" : "58,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

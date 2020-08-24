@@ -3,6 +3,7 @@ setwd("C:/Users/Alka/Documents/R/datasciencecoursera/Getting and cleaning data/"
 
 
 
+
 unzip(zipfile="getdata_projectfiles_UCI HAR Dataset.zip")
 list.files("C:/Users/Alka/Documents/R/datasciencecoursera/Peer-graded Assignment Getting and Cleaning Data Course Projec/")
 
